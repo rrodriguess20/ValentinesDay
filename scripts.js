@@ -6,7 +6,7 @@ function scrollToSection(sectionId){
 	});
 }
 
-const track = document.querySelectorAll('.slide-track');
+const track = document.querySelector('.slide-track');
 let imagens = document.querySelectorAll('.slide-track img');
 let atual = 0;
 
@@ -14,4 +14,4 @@ setInterval(()=>{
 
 	atual = (atual + 1) % imagens.length;
 	track.style.transform = `translateX(-${atual * 600}px)`;
-},3000);
+},6000);
