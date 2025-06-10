@@ -216,3 +216,24 @@ body{
 	height: 352px;
 	border-radius: 12px;
 }
+
+.message-button{
+
+	background: linear-gradient(135deg, #fffaf2d9, #ff7e70);
+	color: white;
+	border: none;
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3 ease;
+	margin: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.message-button:hover{
+
+	transform: scale(1.1);
+	box-shadow: 0 10px 30px rgba(25, 25, 25, 0.4);
+}
