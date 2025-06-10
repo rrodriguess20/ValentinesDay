@@ -14,7 +14,7 @@ setInterval(()=>{
 
 	atual = (atual + 1) % imagens.length;
 	track.style.transform = `translateX(-${atual * 500}px)`;
-},6000);
+},4000);
 
 function finalMessage(){
 

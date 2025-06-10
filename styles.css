@@ -250,3 +250,24 @@ body{
 	transform: translateY(-10px);
 	box-shadow: 0 10px 30px rgba(25, 25, 25, 0.4);
 }
+
+.footer{
+
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #0f0f0f;
+	color: #fffaf2d9;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.footer-content{
+
+	font-style: italic;
+	font-weight: bold;
+	max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
