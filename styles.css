@@ -210,11 +210,18 @@ body{
 	box-shadow: 0 30px 60px rgba(25,25,25,0.15);
 }
 
+.iframe-wrapper{
+
+	border-radius: 12px;
+  	overflow: hidden;
+}
+
 .playlist-container iframe{
 
 	width: 100% !important;
 	height: 352px;
-	border-radius: 12px;
+	border: none;
+	display: block;
 }
 
 .message{
