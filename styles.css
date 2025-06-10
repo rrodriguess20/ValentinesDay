@@ -65,7 +65,7 @@ body{
 
 .hero-content{
 
-	background: rgba(255, 250, 242, 0.85);
+	background: #fffaf2d9;
 	padding: 3rem;
 	border-radius: 20px;
 	box-shadow: 0 20px 40px rgba(25,25,25,0.15);
@@ -103,14 +103,16 @@ body{
 .slide-container{
 
 	position: relative;
-	width: 600px;
-	height: 750px;
+	width: 500px;
 	overflow: hidden;
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(25, 25, 25, 0.2);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	background: fffaf2d9;
+	transition: all 0.6s ease-in-out;
+	backdrop-filter: blur(10px);
 }
 
 .slide-track{
@@ -118,23 +120,99 @@ body{
 	display: flex;
 	width: max-content;
 	transition: transform 0.5s ease-in-out;
+	height: 650px;
+	overflow: hidden;
 }
 .slide-track img{
 
-	width: 600px;
-	height: 750px;
+	width: 500px;
+	height: 650px;
 	object-fit: cover;
 	flex-shrink: 0;
 }
 
 .legenda{
 
-	margin-top: 1rem;
+	margin: 0;
 	padding: 0.8rem 1.2rem;
 	font-size: 1.1rem;
 	text-align: center;
 	background-color: rgba(255, 250, 242, 0.85);
+	border-radius: 0 0 15px 15px;
+	box-shadow: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.slide-container:hover{
+
+	transform: translateY(-10px);
+	box-shadow: 0 30px 60px rgba(25,25,25,0.15);
+}
+
+.soundtrack{
+
+	background: linear-gradient(270deg, #ff7e70, #ff988c, #ffaea5);
+	padding: 4rem 2rem;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+}
+
+.soundtrack-content{
+
+	display: flex;
+	align-items: center;
+	gap: 10rem;
+	max-width: 1200px;
+	width: 100%;
+	overflow: visible;
+}
+
+.playlist-text{
+
+	background: #fffaf2d9;
+	border-radius: 20px;
+	text-align: center;
+	font-size: large;
+	padding: 2rem;
+	flex: 1;
+	max-width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 15px 30px rgba(25,25,25,0.15);
+    backdrop-filter: blur(10px);
+    transition: all 0.6s ease-in-out;
+}
+
+.playlist-text:hover{
+
+	transform: translateY(-10px);
+	box-shadow: 0 25px 50px rgba(25,25,25,0.15);
+}
+
+.playlist-container{
+
+	backdrop-filter: blur(10px);
+	transition: all 0.6s ease-in-out;
+	flex: 1;
+	max-width: 500px;
+	box-shadow: 0 20px 40px rgba(25,25,25,0.15);
+    border-radius: 12px;
+}
+
+.playlist-container:hover{
+
+	transform: translateY(-10px);
+	box-shadow: 0 30px 60px rgba(25,25,25,0.15);
+}
+
+.playlist-container iframe{
+
+	width: 100% !important;
+	height: 352px;
 	border-radius: 12px;
-	box-shadow: 0 4px 12px rgba(25, 25, 25, 0.2);
-	max-width: 90%;
 }
