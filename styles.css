@@ -217,16 +217,29 @@ body{
 	border-radius: 12px;
 }
 
+.message{
+
+	background: linear-gradient(270deg, #ff7e70, #ff988c, #ffaea5);
+	height: 100vh;
+	padding: 4rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .message-button{
 
-	background: linear-gradient(135deg, #fffaf2d9, #ff7e70);
-	color: white;
+	background:#fffaf2d9;
+	color: #ff7e70;
+	font-weight: bold;
 	border: none;
 	padding: 1rem 2rem;
 	font-size: 1.2rem;
 	border-radius: 50px;
+	box-shadow: 0 10px 30px rgba(25, 25, 25, 0.4);
 	cursor: pointer;
-	transition: all 0.3 ease;
+	transition: all 0.6s ease-in-out;
+	backdrop-filter: blur(10px);
 	margin: 1rem;
 	position: relative;
 	overflow: hidden;
@@ -234,6 +247,6 @@ body{
 
 .message-button:hover{
 
-	transform: scale(1.1);
+	transform: translateY(-10px);
 	box-shadow: 0 10px 30px rgba(25, 25, 25, 0.4);
 }
